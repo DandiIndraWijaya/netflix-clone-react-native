@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Android Hermes - Experimental",
+      "request": "launch",
+      "type": "reactnativedirect",
+      "cwd": "${workspaceFolder}",
+      "enableDebug": false,
+      "platform": "android"
+    },
+    {
+      "name": "Debug Android",
+      "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android",
+      "sourceMaps": true,
+      "outDir": "${workspaceRoot}/.vscode/.react"
+    },
+    {
+      "name": "Debug iOS",
+      "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios",
+      "target": "iPhone 5s",
+      "sourceMaps": true,
+      "outDir": "${workspaceRoot}/.vscode/.react"
+    }
+  ]
+}
